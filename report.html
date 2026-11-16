@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Waste | Clean Kampala</title>
+    <link rel="icon" href="images/image_7a69360.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    
+    <header>
+      <div class="logo">
+        <h2>Clean Kampala</h2>
+        <p>Building a cleaner community</p>
+      </div>  
+
+      
+       <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="report.html">Report Waste</a></li>
+            <li><a href="guide.html">Waste Guide</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+
+    </header>
+
+    <main>
+       
+         <section class="page-banner">
+            <h1>Report a Waste Problem</h1>
+            <p>Help us identify waste management challenges in your community.</p>
+         </section>
+
+         
+          <section class="report-intro">
+            <h2>See a Waste Problem?</h2>
+            <p>
+                If you notice improperly disposed waste, overflowing rubbish points or blocked drainage caused by waste, use the form below to describe the problem.
+            </p>
+
+            <p>
+                Please provide accurate information so that the problem can be clearly understood.
+            </p>
+          </section>
+
+          
+           <section class="report-section">
+            <form id="wasteReportForm">
+                <h2>Waste Problem Details</h2>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="location">Location where waste is placed</label>
+                    <input 
+                    type="text"
+                    id="location"
+                    name="location"
+                    placeholder="Example: Kampala Road"
+                    required
+                    >
+
+                </div>
+
+                <div class="form-group">
+                    <label for="wasteType">Type of Waste Problem</label>
+                    <select id="wasteType" name="wasteType" required>
+                        <option value="">Select a problem</option>
+                        <option value="Improper dumping">Improper waste dumping</option>
+                        <option value="Overflowing rubbish">Overflowing rubbish collection point</option>
+                        <option value="Blocked drainage">Blocked drainage due to rubbish</option>
+                        <option value="Burning waste">Burning of waste</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateObserved">Date problem was observed</label>
+                    <input
+                       type="date"
+                       id="dateObserved"
+                       name="dateObserved"
+                       required
+                       >
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Describe the Problem</label>
+
+                    <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    required>
+                    </textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Report
+                </button>
+
+                <p id="formMessage" role="status" aria-live="polite"></p>
+            </form>
+
+            <p class="form-notice">
+                Note: This is a student demonstration form.
+                Reports are not automatically sent to KCCA
+                or
+                any waste collection authority.
+            </p>
+
+           </section>
+
+    </main>
+
+   
+     <footer>
+        <p>
+            &copy; 2026 Community Waste management
+            and
+            Reporting System - Kampala Central Division.
+        </p>
+        <p>Working together for a cleaner environment.</p>
+     </footer>
+
+    
+</body>
+</html>
